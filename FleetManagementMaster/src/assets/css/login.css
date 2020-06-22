@@ -1,0 +1,59 @@
+html, body { height: 100%;}
+body { font-family: 'Lato', sans-serif; background-image:url(../images/login-bg.jpg); background-repeat: repeat; background-position: center center;  }
+h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; }
+a:hover { text-decoration: none; }
+* { transition: .35s ease-in-out;} 
+
+.bg-c-primary { background-color: #0743a5;}
+.bg-c-secondary { background-color: #009dba; }
+.bg-c-buttons { background-color: #546b77; }
+.bg-red { background-color: #ec3438; }
+
+.fnt-16 { font-size: 16px;}
+.fnt-18 { font-size: 18px;}
+.fnt-20 { font-size: 20px;}
+.fnt-22 { font-size: 22px;}
+.fnt-24 { font-size: 24px;}
+
+.color0 { color: #546b77; }
+.color1 { color: #0743a5; }
+.color2 { color: #009dba; }
+.color3 { color: #cd3d40; }
+.color4 { color: #bb51c4; }
+.color5 { color: #51c48f; }
+.color6 { color: #727ef8; }
+.color7 { color: #3d81cd; }
+
+.border-color1 { border-color: #0743a5; }
+.border-color2 { border-color: #009dba; }
+.border-color3 { border-color: #cd3d40; }
+.border-color4 { border-color: #bb51c4; }
+.border-color5 { border-color: #51c48f; }
+.border-color6 { border-color: #727ef8; }
+.border-color7 { border-color: #3d81cd; }
+
+/* CSS FOR LOGIN & Register page */
+.login-window { height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;}
+.login-form { display: flex; border-radius: 5px; box-shadow: 3px 3px 3px #011239; }
+.login-form .leftlogo {  background-image: linear-gradient(to bottom, #005a8a 0%, #002060 70%, #002060 100%); padding: 0px 30px; border-radius: 5px 0px 0px 5px; display: flex; align-items:center; }
+.login-form .leftlogo img { max-width: 100%; }
+.login-form .rightform {  background-color: #f0f0f0; padding: 15% 80px 13% 80px; color: #546b77;  }
+.login-form .rightform .form-group input { width: 380px; padding: 10px 10px;}
+.login-form .rightform a { color: #009dba; }
+.login-form .rightform h1 { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+.login-form .rightform button { width: 100%; border-radius: 3px; color: #fff; padding: 10px 0px; }
+
+
+@media screen and (max-width:1350px){
+    .login-form .rightform { padding: 5% 50px; color: #546b77;  }
+}
+@media screen and (max-width:991){ 
+    .login-form .rightform .form-group input { width: 80%;}
+}
+@media screen and (max-width:768px){
+    .login-window { height: 100%; width: 100%; display:block; padding: 20px; }
+    .login-form { display: block; }
+    .login-form .leftlogo { width: 100%; display: block; text-align: center; padding:20px; border-radius:5px 5px 0px 0px; }
+    .login-form .rightform { padding: 20px;}
+    .login-form .rightform .form-group input { width: 100%;}
+}
