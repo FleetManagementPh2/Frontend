@@ -1,0 +1,182 @@
+<!--<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Corp Admin Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+</head>-->
+
+<body>
+    <header>
+        <div class="col-6 align-items-center d-flex">
+            <a href="index.html" class="logo"></a>
+            <a class="togglebtn" id="togglebtn"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="dropdown d-flex justify-content-end align-items-center">
+                <a href="#" data-toggle="dropdown"><img src="../../../../assets/images/user-img.png" alt="" class="user-info" /> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="profile.html">My profile</a>
+                    <a class="dropdown-item" href="companydetails.html">Company details</a>
+                    <a class="dropdown-item" href="subscription-plan.html">Subscription</a>
+                    <a class="dropdown-item" href="login.html">Sign out</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <app-sidebar></app-sidebar>
+        <!--<nav class="collapse-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html" title="Dashboard"><i class="fa fa-tachometer-alt fa-fw"></i> <span>Dashboard</span></a></li>
+                <li class="selected" title="Company"><a href="company.html"><i class="fa fa-building fa-fw"></i> <span>Company</span></a></li>
+                <li><a href="captains.html" title="Captains"><i class="fas fa-user-secret fa-fw"></i> <span>Captains</span></a></li>
+                <li><a href="boats.html" title="Trips"><i class="fas fa-ship fa-fw"></i> <span>Boats</span></a></li>
+                <li><a href="trips.html" title="Trips"><i class="fas fa-route fa-fw"></i> <span>Trips</span></a></li>
+                <li><a href="help.html" title="Help"><i class="fas fa-question fa-fw"></i> <span>Help</span></a></li>
+            </ul>
+            <div class="copyright"><span>Copyright 2019 &copy; All Rights Reserved. <br>Marine Corp</span> <i class="far fa-copyright" title="Copyright 2019 &copy; All Rights Reserved. <br>Marine Corp"></i></div>
+        </nav>-->
+        <aside>
+            <div class="main-container">
+                <div class="page-title">
+                    <h1>Company</h1>
+                </div>
+                <!-- <div class="page-title">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label class="mr-3">Company: </label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Please Select Company</option>
+                                    <option>Leisure Tours Ltd. </option>
+                                    <option>Private Charters GmbH</option>
+                                    <option>NorOilSupport AS</option>
+                                    <option>SweBoatCharter AB</option>
+                                    <option>Private Secure Ltd. </option>
+                        </select>
+                </div>
+            </div> -->
+
+                <!-- <a href="add-company.html" class="btn bg-c-buttons"><i class="fa fa-plus"></i> Add Company</a> -->
+                <div class="page-content">
+
+                    <table class="GeneralGrid table table-strips">
+                        <thead>
+                            <tr>
+                                <th>Company Name <a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Owner Name<a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Postal Code<a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Company Email <a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Conatct_Number<a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Company Address <a href="#"><i class="fas fa-sort-amount-down fa-fw fa-sm"></i></a></th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="companydetails.html">Leisure Tours Ltd.</a></td>
+                                <td>Elon Angles</td>
+                                <td>123456</td>
+                                <td>Leisure@gmail.com</td>
+                                <td>1234567895</td>
+                                <td>United Kingdom</td>
+                                <td class="action">
+                                    <a href="companydetails.html" class="link-edit"><i class="fa fa-pencil-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="link-trash"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="companydetails.html">Leisure Tours Ltd.</a></td>
+                                <td>Elon Angles</td>
+                                <td>123456</td>
+                                <td>Leisure@gmail.com</td>
+                                <td>1234567895</td>
+                                <td>United Kingdom</td>
+                                <td class="action">
+                                    <a href="companydetails.html" class="link-edit"><i class="fa fa-pencil-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="link-trash"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="companydetails.html">Leisure Tours Ltd.</a></td>
+                                <td>Elon Angles</td>
+                                <td>123456</td>
+                                <td>Leisure@gmail.com</td>
+                                <td>1234567895</td>
+                                <td>United Kingdom</td>
+                                <td class="action">
+                                    <a href="companydetails.html" class="link-edit"><i class="fa fa-pencil-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="link-trash"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="companydetails.html">Leisure Tours Ltd.</a></td>
+                                <td>Elon Angles</td>
+                                <td>123456</td>
+                                <td>Leisure@gmail.com</td>
+                                <td>1234567895</td>
+                                <td>United Kingdom</td>
+                                <td class="action">
+                                    <a href="companydetails.html" class="link-edit"><i class="fa fa-pencil-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="link-trash"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="companydetails.html">Leisure Tours Ltd.</a></td>
+                                <td>Elon Angles</td>
+                                <td>123456</td>
+                                <td>Leisure@gmail.com</td>
+                                <td>1234567895</td>
+                                <td>United Kingdom</td>
+                                <td class="action">
+                                    <a href="companydetails.html" class="link-edit"><i class="fa fa-pencil-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#myModal" class="link-trash"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="grcontrols">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="pagination">
+                                    <li><a href="#"> &lt; </a></li>
+                                    <li class="selected"><a href="1">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"> &gt; </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-end">
+                                <ul class="gridsorting">
+                                    <li>Shows
+                                        <select>
+                                        <option>5</option>                        
+                                        <option>15</option>        
+                                        <option>25</option>
+                                    </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+
+
+</body>

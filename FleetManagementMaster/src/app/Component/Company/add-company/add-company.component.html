@@ -1,0 +1,102 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Corp Admin Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="col-6 align-items-center d-flex">
+            <a href="index.html" class="logo"></a>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="dropdown d-flex justify-content-end align-items-center">
+                <a href="#" data-toggle="dropdown"><img src="../../../../assets/images/user-img.png" alt="" class="user-info" /> <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="profile.html">My profile</a>
+                    <a class="dropdown-item" href="companydetails.html">Company details</a>
+                    <a class="dropdown-item" href="subscription-plan.html">Subscription</a>
+                    <a class="dropdown-item" href="login.html">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <aside>
+            <div class="main-container">
+                <div class="page-title">
+                    <h1>Add Company</h1>
+                </div>
+                <div class="page-form">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Name">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Owner Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Owner Name">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Company Address</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Owner photo</label>
+                            <input class="form-control" class='form-control' name="ImageFile" type="file" placeholder="Enter your email">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>Postal_Code</label>
+                            <input type="text" class="form-control" placeholder="Enter Postal_Code">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-3 mb-3">
+                            <label>Company Email</label>
+                            <input type="text" class="form-control" placeholder="Enter Company Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Contact Number</label>
+                            <input type="text" class="form-control" placeholder="Enter Contact Number">
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-3  mb-3">
+                            <!--<label>Postal Code</label>-->
+                            <input type="hidden" name="IsActive" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4  mb-3">
+                            <!--<label>State/Regions</label>-->
+                            <input type="hidden" name="IsDeleted" />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <!--<label>User_ID</label>-->
+                            <input type="hidden" class="form-control" placeholder="Enter User_ID">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-12 pt-3 pt-2">
+                            <a href="subscription-plan.html" class="btn bg-c-secondary mr-3">Save & Subscribe</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
